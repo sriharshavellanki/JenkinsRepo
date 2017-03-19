@@ -1,0 +1,30 @@
+{
+  "apps": [
+    {
+      "appName": "Jenkins Assignment",
+      "environments": [
+        {
+          "environmentNames": "DEV1",
+          "logicalStage": "dev",
+          "deploymentStatus": "true"
+        },
+        {
+          "environmentNames": "SIT7",
+          "logicalStage": "sit",
+          "deploymentStatus": "false"
+        },
+        {
+          "environmentNames": "UAT10",
+          "logicalStage": "uat",
+          "deploymentStatus": "false"
+        }
+      ]
+    }
+  ],
+  "timeouts": {
+    "deploymentApproval": {
+      "time": "5",
+      "unit": "MINUTES"
+    }
+  }
+}
